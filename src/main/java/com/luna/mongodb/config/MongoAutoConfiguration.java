@@ -1,6 +1,8 @@
 package com.luna.mongodb.config;
+
+import com.luna.mongodb.listener.SaveMongoEventListener;
 import com.luna.mongodb.util.MongodbUtil;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -9,10 +11,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MongoAutoConfiguration {
 
-    @Autowired
-    private final MongodbUtil mongodbUtil;
+    @Bean
+    public MongodbUtil mongodbUtil() {
+        return new MongodbUtil();
+    }
 
-    public MongoAutoConfiguration(MongodbUtil mongodbUtil) {
-        this.mongodbUtil = mongodbUtil;
+    @Bean
+    public SaveMongoEventListener mongoEventListener() {
+        return new SaveMongoEventListener();
     }
 }
