@@ -6,7 +6,9 @@
 
     <groupId>com.github.czy1024</groupId>
     <artifactId>mongodb-spring-boot-starter</artifactId>
-    <version>1.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
+    <description>mongodb-spring-boot-starter MongodbUtil</description>
+    <url>https://github.com/czy1024/mongodb-spring-boot-starter</url>
     <properties>
         <maven.test.skip>true</maven.test.skip>
         <maven.compiler.source>8</maven.compiler.source>
