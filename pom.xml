@@ -6,6 +6,7 @@
 
     <groupId>com.github.czy1024</groupId>
     <artifactId>mongodb-spring-boot-starter</artifactId>
+    <name>mongodb-spring-boot-starter</name>
     <version>1.0.1-RELEASE</version>
     <description>mongodb-spring-boot-starter MongodbUtil</description>
     <url>https://github.com/czy1024/mongodb-spring-boot-starter</url>
